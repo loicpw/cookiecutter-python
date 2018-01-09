@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install -r requirements-dev.txt
+  - pip install python-coveralls
+script:
+  - cd tests && ( pytest -vv --cov-report term-missing --cov {{ cookiecutter.package_name }} )
+after_success:
+  - coveralls
+sudo: false

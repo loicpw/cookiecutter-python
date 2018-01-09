@@ -1,0 +1,12 @@
+{
+    "author_name": "Loïc Peron",
+    "author_email": "peronloic.us@gmail.com",
+    "author_username": "loicpw",
+    "author_github": "https://github.com/{{ cookiecutter.author_username }}",
+
+    "project_name": "foo",
+    "package_name": "{{ cookiecutter.project_name|lower|replace(' ', '-')|replace('_', '-') }}",
+    "package_version": "0.0.1",
+    "package_description": "description of foo",
+    "package_url": "https://github.com/{{ cookiecutter.author_username }}/{{ cookiecutter.package_name }}"
+}

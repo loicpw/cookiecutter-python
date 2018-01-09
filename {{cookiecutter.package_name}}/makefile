@@ -1,0 +1,19 @@
+all: install
+
+install: 
+	pip install -r requirements.txt
+	pip install .
+
+dev: 
+	pip install -r requirements-dev.txt
+	pip install -e .
+
+freeze: 
+	pip freeze | sort | grep -v '{{ cookiecutter.package_name }}' > .pipfreeze.txt && cat .pipfreeze.txt
+
+test: 
+	cd tests && ( pytest -vv --cov-report html --cov {{ cookiecutter.package_name }} )
+
+doc: 
+	cd docs && make html
+
