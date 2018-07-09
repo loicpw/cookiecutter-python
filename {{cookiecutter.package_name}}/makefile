@@ -9,8 +9,7 @@ dev:
 	pip install -e .
 
 freeze: 
-	pip freeze | sort | grep -v '{{ cookiecutter.package_name }}' > .pipfreeze.txt && cat .pipfreeze.txt
-
+	pip freeze | sort | grep -v '{{ cookiecutter.package_name }}'
 test: 
 	cd tests && ( pytest -vv --cov-report html --cov {{ cookiecutter.package_name }} )
 
