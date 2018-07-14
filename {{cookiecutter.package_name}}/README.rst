@@ -21,7 +21,7 @@
 install and test
 =======================
 
-production install
+install from pypi
 ********************
 
 using pip:
@@ -30,16 +30,21 @@ using pip:
 
     $ pip install {{ cookiecutter.package_name }}
 
-run the tests
+production install
 ******************
 
-Use the makefile in the project root directory:
+There is a makefile in the project root directory:
+    
+.. code-block:: bash
+
+    $ make install
+
+Using pip, the above is equivalent to:
 
 .. code-block:: bash
 
-    $ make test
-
-This runs the tests generating a coverage html report
+    $ pip install -r requirements.txt                                             
+    $ pip install -e .
 
 dev install
 ****************
@@ -57,15 +62,16 @@ Using pip, the above is equivalent to:
     $ pip install -r requirements-dev.txt                                             
     $ pip install -e .
 
+run the tests
+******************
 
-.. note:: in order to keep requirements file alphabetically sorted and
-          keep comments, use the makefile to **pip freeze** which will
-          generate a **.pipfreeze.txt** file containing sorted result,
-          and then edit the actual files manually:
+Use the makefile in the project root directory:
 
-          .. code-block:: bash
+.. code-block:: bash
 
-            $ make freeze
+    $ make test
+
+This runs the tests generating a coverage html report
 
 build the doc
 ******************
