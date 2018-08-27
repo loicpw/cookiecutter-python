@@ -11,7 +11,7 @@ dev:
 freeze: 
 	pip freeze | sort | grep -v '{{ cookiecutter.package_name }}'
 test: 
-	cd tests && ( pytest -vv --cov-report html --cov {{ cookiecutter.package_name }} )
+	cd tests && ( pytest -rXxs -vv --cov-report html --cov {{ cookiecutter.package_name }} )
 
 doc: 
 	cd docs && make html
