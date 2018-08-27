@@ -3,8 +3,9 @@
 
 .. toctree:: 
    :maxdepth: 2
-   :caption: source documentation:
+   :caption: documentation:
 
+   contents/doc.rst
    contents/{{ cookiecutter.package_name }}.rst
 
 
