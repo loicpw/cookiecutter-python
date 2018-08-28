@@ -46,3 +46,5 @@ tmp/
 design/
 docs/_build/
 htmlcov/
+.pytest_cache/
+*toto*
