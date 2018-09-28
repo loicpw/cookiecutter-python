@@ -38,7 +38,7 @@ extensions = ['sphinx.ext.autodoc',
 # see sphinx.ext.intersphinx
 # http://www.sphinx-doc.org/en/stable/ext/intersphinx.html#module-sphinx.ext.intersphinx
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3.6', None),
+    'python': ('https://docs.python.org', None),
     #'other': ('http://other.readthedocs.io/en/latest', None),
 }
 
