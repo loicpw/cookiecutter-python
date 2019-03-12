@@ -12,7 +12,7 @@ This is my simple `cookiecutter`_ for creating python projects, it uses:
 - `coveralls`_
 - pep8 test
 - badges in README file
-- **makefile** with targets: **install**, **dev**, **test**, **doc** and **freeze**
+- **makefile** with targets: **dev**, **test**, **doc** (and **freeze**)
 
 Usage
 -----
