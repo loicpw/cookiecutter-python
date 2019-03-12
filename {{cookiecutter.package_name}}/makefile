@@ -13,3 +13,5 @@ test:
 doc: 
 	cd docs && make html
 
+find-version:
+	egrep --recursive "(version|__version__|release) ?= ?['\"]\d+\.\d+\.\d+['\"]" .

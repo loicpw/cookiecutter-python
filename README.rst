@@ -12,7 +12,8 @@ This is my simple `cookiecutter`_ for creating python projects, it uses:
 - `coveralls`_
 - pep8 test
 - badges in README file
-- **makefile** with targets: **dev**, **test**, **doc** (and **freeze**)
+- **makefile** with targets: **dev**, **test**, **doc**
+- additional **makefile** targets: **freeze** (sorted pip freeze), **find-version** (find version statements in repos)
 
 Usage
 -----
